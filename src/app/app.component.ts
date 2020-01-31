@@ -12,14 +12,15 @@ import { ApiService } from './api.service';
 export class AppComponent {
 
   searchResults: any = [];
-  constructor(private api: ApiService){}
+  constructor(private api: ApiService) {}
   title = 'assignment';
 
   getRepositories(value) {
     this.api.getRepository(value)
       .subscribe(data => {
-        this.searchResults = data['items'].slice(0,3);
+        this.searchResults = data['items'].slice(0, 3);
       });
   }
+
 }
 

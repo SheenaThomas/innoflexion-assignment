@@ -185,7 +185,7 @@
 
 .card.hovercard {
   position: relative;
-  padding-top: 0;
+  padding-top: 2px;
   overflow: hidden;
   text-align: center;
   background-color: rgba(214, 224, 226, 0.2);
@@ -243,4 +243,9 @@
 .custom-color{
   background-color:white !important;
 }
+.custom-circle{
+  padding: 2px;
+  border: 1px solid;
+  border-radius: 48%;}
+
 

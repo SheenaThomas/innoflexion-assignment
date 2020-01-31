@@ -29,7 +29,7 @@
       <div class="row">
         <div *ngFor="let searchResult of searchResults">
           <div class="col-lg-4 col-sm-6">
-            <div class="card hovercard card-custom custom-color ">
+            <div class="card hovercard card-custom custom-color">
               <div class="avatar ">
                 <img
                   alt=""
@@ -38,45 +38,37 @@
               </div>
               <h3>{{ searchResult.name }}</h3>
               <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-2">
-                  <span>{{ searchResult.forks }}</span>
+
+
+                <div class="col-lg-3">
+                  <div class="custom-circle">
+                    <i class="glyphicon glyphicon-star"></i>
+                    <span>{{ searchResult.stargazers_count }}</span>
+                  </div>
                 </div>
-                <div class="col-lg-2">
-                  <span>{{ searchResult.open_issues }}</span>
+                <div class="col-lg-4">
+                  <div class="custom-circle">
+                    <i class="fas fa-code-branch"></i>
+                    <span>Fork: {{ searchResult.forks }}</span>
+                  </div>
                 </div>
-                <div class="col-lg-4"></div>
+                <div class="col-lg-5">
+                  <div class="custom-circle">
+                    <i class="far fa-code-branch"></i>
+                     <span>Open Issues{{ searchResult.open_issues }}</span>
+                  </div>
+                </div>
               </div>
               <p>{{ searchResult.description }}</p>
-              <div class="bottom">
-                <a
-                  class="btn btn-primary btn-twitter btn-sm"
-                  href="https://twitter.com/webmaniac"
-                >
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a
-                  class="btn btn-danger btn-sm"
-                  rel="publisher"
-                  href="https://plus.google.com/+ahmshahnuralam"
-                >
-                  <i class="fa fa-google-plus"></i>
-                </a>
-                <a
-                  class="btn btn-primary btn-sm"
-                  rel="publisher"
-                  href="https://plus.google.com/shahnuralam"
-                >
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a
-                  class="btn btn-warning btn-sm"
-                  rel="publisher"
-                  href="https://plus.google.com/shahnuralam"
-                >
-                  <i class="fa fa-behance"></i>
-                </a>
+
+
+              <div class="card-footer">
+                <div class="btn-group btn-group-justified">
+                  <a href="{{searchResult.git_url}}" class="btn btn-primary">View Profile</a>
+
+                </div>
               </div>
+
             </div>
           </div>
         </div>

@@ -14,9 +14,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-
-
  .card-bottom {
   position: absolute;
   bottom: 0;
@@ -53,22 +50,6 @@
 
 .card.hovercard .info {
   padding: 4px 8px 10px;
-}
-
-.card.hovercard .info .title {
-  margin-bottom: 4px;
-  font-size: 24px;
-  line-height: 1;
-  color: #262626;
-  vertical-align: middle;
-}
-
-.card.hovercard .info .desc {
-  overflow: hidden;
-  font-size: 12px;
-  line-height: 20px;
-  color: #737373;
-  text-overflow: ellipsis;
 }
 .card-header {
   border-radius: 50%;

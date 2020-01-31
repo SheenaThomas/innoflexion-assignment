@@ -2,7 +2,7 @@
   <div class="panel panel-primary">
     <div class="panel-heading">Git Repo Search Filter</div>
     <div class="panel-body">
-      <form class="navbar-form navbar-left" role="search">
+      <form class="navbar-form" role="search">
         <div class="form-group">
           <input
             type="text"
@@ -11,7 +11,7 @@
             placeholder="Search"
           />
         </div>
-        <button
+        <button style="margin-left:10px"
           (click)="getRepositories(searchBox.value)"
           type="button"
           class="btn btn-primary"
@@ -53,7 +53,7 @@
                 <div class="col-lg-5 col-xs-5">
                   <div class="custom-circle">
                     <i class="far fa-code-branch"></i>
-                    <span>Open Issues{{ searchResult.open_issues }}</span>
+                    <span>OpenIssues: {{ searchResult.open_issues }}</span>
                   </div>
                 </div>
               </div>

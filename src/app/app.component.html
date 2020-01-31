@@ -38,8 +38,6 @@
               </div>
               <h3>{{ searchResult.name }}</h3>
               <div class="row">
-
-
                 <div class="col-lg-3">
                   <div class="custom-circle">
                     <i class="glyphicon glyphicon-star"></i>
@@ -55,20 +53,19 @@
                 <div class="col-lg-5">
                   <div class="custom-circle">
                     <i class="far fa-code-branch"></i>
-                     <span>Open Issues{{ searchResult.open_issues }}</span>
+                    <span>Open Issues{{ searchResult.open_issues }}</span>
                   </div>
                 </div>
               </div>
-              <p>{{ searchResult.description }}</p>
-
+              <p class="custom-margin">{{ searchResult.description }}</p>
 
               <div class="card-footer text-muted card-bottom">
                 <div class="btn-group btn-group-justified">
-                  <a href="{{searchResult.git_url}}" class="btn btn-primary">View Profile</a>
-
+                  <a href="{{ searchResult.git_url }}" class="btn btn-primary"
+                    >View Profile</a
+                  >
                 </div>
               </div>
-
             </div>
           </div>
         </div>

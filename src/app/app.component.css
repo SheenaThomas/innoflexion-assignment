@@ -48,17 +48,20 @@
   border: 5px solid rgba(255, 255, 255, 0.5);
 }
 
-.card.hovercard .info {
-  padding: 4px 8px 10px;
-}
+
+
 .card-header {
   border-radius: 50%;
 }
 
 .card-custom {
   height: 300px;
+  margin-top: 20px;
 
 }
+.custom-margin{
+margin-top: 22px;}
+
 .panel-color{
   background-color: #F0F5F9;
 }

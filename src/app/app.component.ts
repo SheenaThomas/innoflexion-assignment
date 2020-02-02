@@ -10,7 +10,6 @@ import { ApiService } from './api.service';
 })
 
 export class AppComponent {
-
   searchResults: any = [];
   constructor(private api: ApiService) {}
   title = 'assignment';

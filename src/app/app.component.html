@@ -59,9 +59,9 @@
               </div>
               <p class="custom-margin">{{ searchResult.description }}</p>
 
-              <div class="card-footer text-muted card-bottom">
+              <div class="card-bottom">
                 <div class="btn-group btn-group-justified">
-                  <a href="{{ searchResult.git_url }}" class="btn btn-primary"
+                  <a [href]="searchResult.html_url | safeurl" target="_blank" class="btn btn-primary"
                     >View Profile</a
                   >
                 </div>

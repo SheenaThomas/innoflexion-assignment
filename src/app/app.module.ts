@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
+import { SafeurlPipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SafeurlPipe
   ],
   imports: [
     BrowserModule,
